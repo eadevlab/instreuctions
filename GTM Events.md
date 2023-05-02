@@ -3,9 +3,9 @@
 ### События просмотра товара (view_item)
 Необходимо на всех страницах товара разместить следующий код:
 ```
-
+dataLayer = window.dataLayer||[];
 dataLayer.push({
-	event: 'view_item',
+  event: 'view_item',
   ecommerce: {
     value: {{Цена товара, переменная – число}},
     items: [
